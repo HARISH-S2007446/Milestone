@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'python -m py_compile app.py'
+                bat 'python -m py_compile app.py'
                 sleep time: 15, unit: 'SECONDS'
             }
         }
